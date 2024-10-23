@@ -15,7 +15,7 @@ const AboutUs = () => {
                   <img className=" h-[400px] w-[500px] rounded-xl " src="https://www.skillstork.org/blog/wp-content/uploads/2022/11/modern-education-Skillstork-1568x882.jpg" alt="" />
                </div>
 
-               
+                
                <div>
                  <p className=" text-orange-500 font-serif">| ABOUT US</p>
                  <p className=" mt-5 font-serif text-5xl">Learn New Skills,<br></br>
