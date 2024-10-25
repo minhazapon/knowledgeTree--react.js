@@ -8,8 +8,10 @@ const Nav = () => {
     const navZ = <>
     
         <li className=" text-white font-serif" ><NavLink to='/' >Home</NavLink></li>
-        <li className=" text-white font-serif" ><NavLink to='/about' >About</NavLink></li>
         <li className=" text-white font-serif" ><NavLink to='/course' >Course</NavLink></li>
+        <li className=" text-white font-serif" ><NavLink to='/blogs' >Blogs</NavLink></li>
+        <li className=" text-white font-serif" ><NavLink to='/shop' >Shop</NavLink></li>
+        <li className=" text-white font-serif" ><NavLink to='/contact' >Contact</NavLink></li>
      
     
     
