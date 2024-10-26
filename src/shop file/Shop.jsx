@@ -3,6 +3,8 @@ import { useState } from "react";
 import ShopBanner from "./ShopBanner";
 import { useEffect } from "react";
 import ShopList from "./ShopList";
+import ShopPagination from "./ShopPagination";
+import SideInfo from "./SideInfo";
 
 
 const Shop = () => {
@@ -10,6 +12,11 @@ const Shop = () => {
 
 
     const [ tree, setTree ] = useState([]) 
+
+
+    const [currentPerPage, setcurrentPerPage] = useState(1)
+
+    const [postPerPage, setPostPerPage] = useState(9)
 
     useEffect( () =>{
       
@@ -20,6 +27,11 @@ const Shop = () => {
     } , [])
 
 
+    const lastIndex = currentPerPage * postPerPage 
+    const fastIndex = lastIndex - postPerPage
+    const currentPost = tree.slice( fastIndex, lastIndex )
+
+
     return (
         <div className="">
 
@@ -28,12 +40,15 @@ const Shop = () => {
             </div>
            
 
-            <div>
+            <div className=" flex-col md:flex-row lg:flex-row flex justify-center mt-10 gap-10 ">
+               <SideInfo></SideInfo>
+               <ShopList tree={currentPost} ></ShopList>
+            </div>
 
-               <ShopList tree={tree} ></ShopList>
 
 
-
+            <div className=" flex justify-center mt-10   ">
+                <ShopPagination totalPost={tree.length} postPerPage={postPerPage} setcurrentPerPage={setcurrentPerPage} ></ShopPagination>
             </div>
             
           

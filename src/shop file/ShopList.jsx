@@ -10,9 +10,9 @@ const ShopList = ({tree}) => {
     return (
 
 
-        <div>
+        <div className=" flex justify-center">
 
-            <div>
+            <div className=" grid  md:grid-cols-3 gap-5 ">
 
               {tree.map ( ( tree, index ) =>{
 
