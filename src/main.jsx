@@ -22,6 +22,7 @@ import Course from './course file/Course';
 import CourseDataDetails from './course file/CourseDataDetails';
 import AllBlogs from './blogs file/AllBlogs';
 import ABdataDetails from './blogs file/ABdataDetails';
+import Shop from './shop file/Shop';
 
 
 // Create a client
@@ -56,6 +57,11 @@ const router = createBrowserRouter([
         path: "/blogs/:id",
         element:  <ABdataDetails></ABdataDetails> ,
         loader: ({params}) => fetch(`http://localhost:5000/ABlogsData/${params.id}`)
+      },
+      {
+        path: "/shop",
+        element:  <Shop></Shop> ,
+        
       },
     ],
   },
