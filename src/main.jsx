@@ -24,6 +24,8 @@ import AllBlogs from './blogs file/AllBlogs';
 import ABdataDetails from './blogs file/ABdataDetails';
 import Shop from './shop file/Shop';
 import Contact from './contact file/Contact';
+import AddForm from './crud file/AddForm';
+import Read from './crud file/Read';
 
 
 // Create a client
@@ -67,7 +69,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact> ,
-        
+      },
+      {
+        path: "/addForm",
+        element:  <AddForm></AddForm> ,
+      },
+      {
+        path: "/read",
+        element:  <Read></Read> ,
       },
     ],
   },

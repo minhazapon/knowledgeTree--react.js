@@ -4,7 +4,7 @@
 const ShopBanner = () => {
     return (
         <div>
-
+ 
             <div
               className="hero min-h-screen"
               style={{

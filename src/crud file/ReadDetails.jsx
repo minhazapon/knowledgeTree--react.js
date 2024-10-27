@@ -1,18 +1,17 @@
-import { Link } from "react-router-dom";
 
 
 
-const ShopDetails = ({ image, title, price }) => {
-
+const ReadDetails = ({query}) => {
+    
+    const { _id, url, title, price } = query
 
     return (
         <div>
 
             
-
 <div class=" hover:border-[1px] border-black w-full h-[450px] bg-white  rounded-lg shadow dark:bg-gray-800 ">
     <a href="#">
-        <img className=" h-[300px] rounded-t-lg" src={image} alt="product image" />
+        <img className=" h-[300px] rounded-t-lg" src={url} alt="product image" />
     </a>
     <div class="px-5 pb-5">
         <a href="#">
@@ -39,12 +38,11 @@ const ShopDetails = ({ image, title, price }) => {
             <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
         </div>
         <div class="flex items-center justify-between">
-            <span class="text-2xl font-bold font-mono text-gray-900 dark:text-white"> {price} </span>
+            <span class="text-2xl font-bold font-mono text-gray-900 dark:text-white"> {price} </span>   
 
-            <Link to='/addForm' >
-             <button className=" btn  bg-[#0D7C66]  text-white  ">Add To Cart</button>
-            </Link>
-        
+             <button className=" btn text-orange-500 ">Delete</button>
+             <button className=" btn text-orange-500 ">Update</button>
+
         </div>
     </div>
 </div>
@@ -54,4 +52,4 @@ const ShopDetails = ({ image, title, price }) => {
     );
 };
 
-export default ShopDetails;
+export default ReadDetails;
