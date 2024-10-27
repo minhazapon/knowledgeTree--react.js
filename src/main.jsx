@@ -23,6 +23,7 @@ import CourseDataDetails from './course file/CourseDataDetails';
 import AllBlogs from './blogs file/AllBlogs';
 import ABdataDetails from './blogs file/ABdataDetails';
 import Shop from './shop file/Shop';
+import Contact from './contact file/Contact';
 
 
 // Create a client
@@ -61,6 +62,11 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element:  <Shop></Shop> ,
+        
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact> ,
         
       },
     ],
