@@ -8,7 +8,7 @@ const Courses = () => {
     const { data: query } = useQuery({
          queryKey:['query'],
          queryFn: async () =>{            
-            const res = await fetch('http://localhost:5000/courseData')
+            const res = await fetch('https://knowledgetree-express-js-1.onrender.com/courseData')
             return res.json()
          }
     })

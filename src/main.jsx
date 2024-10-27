@@ -45,22 +45,22 @@ const router = createBrowserRouter([
       {
         path: "/course",
         element:  <Course></Course> ,
-        loader: () => fetch('http://localhost:5000/courseData')
+        loader: () => fetch('https://knowledgetree-express-js-1.onrender.com/courseData')
       },
       {
         path: "/course/:id",
         element:  <CourseDataDetails></CourseDataDetails> ,
-        loader: ({params}) => fetch(`http://localhost:5000/courseData/${params.id}`)
+        loader: ({params}) => fetch(`https://knowledgetree-express-js-1.onrender.com/courseData/${params.id}`)
       },
       {
         path: "/blogs",
         element: <AllBlogs></AllBlogs> ,
-        loader: () => fetch('http://localhost:5000/ABlogsData')
+        loader: () => fetch('https://knowledgetree-express-js-1.onrender.com/ABlogsData')
       },
       {
         path: "/blogs/:id",
         element:  <ABdataDetails></ABdataDetails> ,
-        loader: ({params}) => fetch(`http://localhost:5000/ABlogsData/${params.id}`)
+        loader: ({params}) => fetch(`https://knowledgetree-express-js-1.onrender.com/ABlogsData/${params.id}`)
       },
       {
         path: "/shop",
@@ -82,7 +82,7 @@ const router = createBrowserRouter([
       {
         path: "/update/:id",
         element: <Update></Update> ,
-        loader: ({params}) => fetch(`http://localhost:5000/productData/${params.id}`)
+        loader: ({params}) => fetch(`https://knowledgetree-express-js-1.onrender.com/productData/${params.id}`)
       },
     ],
   },

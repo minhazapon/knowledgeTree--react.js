@@ -18,7 +18,7 @@ const AddForm = () => {
       const price = form.price.value
       const AllPro = { url, title, price } 
       console.log(AllPro)
-      fetch('http://localhost:5000/productData', {
+      fetch('https://knowledgetree-express-js-1.onrender.com/productData', {
           method: 'POST',
           headers:{
              'content-type': 'application/json'

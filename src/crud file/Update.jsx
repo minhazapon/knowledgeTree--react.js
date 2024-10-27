@@ -22,7 +22,7 @@ const Update = () => {
         const price = form.price.value
         const AllPro = { url, title, price } 
         console.log(AllPro)
-        fetch(`http://localhost:5000/productData/${_id}`, {
+        fetch(`https://knowledgetree-express-js-1.onrender.com/productData/${_id}`, {
             method: 'PUT',
             headers:{
                'content-type': 'application/json'

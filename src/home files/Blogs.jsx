@@ -11,7 +11,7 @@ const Blogs = () => {
           queryKey:['data'],
           queryFn: async () =>{
              
-            const res = await fetch('http://localhost:5000/blogsData')
+            const res = await fetch('https://knowledgetree-express-js-1.onrender.com/blogsData')
             return res.json();
 
           }

@@ -26,7 +26,7 @@ const ReadDetails = ({query}) => {
           }).then((result) => {
             if (result.isConfirmed) {
            
-            fetch(`http://localhost:5000/productData/${_id}`,{
+            fetch(`https://knowledgetree-express-js-1.onrender.com/productData/${_id}`,{
 
                 method: 'DELETE',
 

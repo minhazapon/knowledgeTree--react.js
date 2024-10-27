@@ -20,7 +20,7 @@ const Shop = () => {
 
     useEffect( () =>{
       
-        fetch('http://localhost:5000/treeShopData')
+        fetch('https://knowledgetree-express-js-1.onrender.com/treeShopData')
         .then( res => res.json())
         .then( data => setTree(data) )
 
