@@ -26,6 +26,7 @@ import Shop from './shop file/Shop';
 import Contact from './contact file/Contact';
 import AddForm from './crud file/AddForm';
 import Read from './crud file/Read';
+import Update from './crud file/Update';
 
 
 // Create a client
@@ -77,6 +78,11 @@ const router = createBrowserRouter([
       {
         path: "/read",
         element:  <Read></Read> ,
+      },
+      {
+        path: "/update/:id",
+        element: <Update></Update> ,
+        loader: ({params}) => fetch(`http://localhost:5000/productData/${params.id}`)
       },
     ],
   },
