@@ -1,4 +1,5 @@
 import ContactBanner from "./ContactBanner";
+import ContaForm from "./ContaForm";
 import OurContact from "./OurContact";
 
 
@@ -8,6 +9,7 @@ const Contact = () => {
 
             <ContactBanner></ContactBanner>
             <OurContact></OurContact>
+            <ContaForm></ContaForm>
             
         </div>
     );

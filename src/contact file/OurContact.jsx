@@ -17,11 +17,11 @@ const OurContact = () => {
                 <div className=" grid  md:grid-cols-3 gap-5 mt-10 ">
 
                 <div
-                  className="hero min-h-screen  rounded-xl "
+                  className="hero min-h-screen  rounded-xl  "
                   style={{
                     backgroundImage: "url(https://thumbs.dreamstime.com/b/vector-illustration-seamless-book-pattern-background-wallpaper-30298316.jpg)",
                   }}>
-                  <div className="hero-overlay  bg-opacity-60 rounded-xl "></div>
+                  <div className="hero-overlay    bg-opacity-80 rounded-xl "></div>
                   <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
                       <div className=" flex justify-center">
@@ -41,7 +41,7 @@ const OurContact = () => {
                   style={{
                     backgroundImage: "url(https://thumbs.dreamstime.com/b/vector-illustration-seamless-book-pattern-background-wallpaper-30298316.jpg)",
                   }}>
-                  <div className="hero-overlay bg-opacity-60 rounded-xl "></div>
+                  <div className="hero-overlay  bg-opacity-80 rounded-xl "></div>
                   <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
                       <div className=" flex justify-center">
@@ -62,7 +62,7 @@ const OurContact = () => {
                   style={{
                     backgroundImage: "url(https://thumbs.dreamstime.com/b/vector-illustration-seamless-book-pattern-background-wallpaper-30298316.jpg)",
                   }}>
-                  <div className="hero-overlay bg-opacity-60 rounded-xl "></div>
+                  <div className="hero-overlay  bg-opacity-80 rounded-xl "></div>
                   <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
                       <div className=" flex justify-center">
